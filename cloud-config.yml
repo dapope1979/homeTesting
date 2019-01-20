@@ -1,3 +1,12 @@
+
+rancher:
+  environment:
+    EXTRA_CMDLINE: /init
+  services_include:
+    kernel-headers-system-docker: true
+    zfs: true
+  state:
+    dev: LABEL=RANCHER_STATE
+    wait: true
 ssh_authorized_keys:
   - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDO98EkzGfdXoS5DdFJIKkPlYGcF0WinZV5xEwMyjcNUz1mdsG9BfUSt9sHqpm2IOgEkZ1RYW8LYNDCTRliYsx7AwcaE/8T8Ct3dFMtjgGYrbJweoCAQ/RDbeYFF+gdxs4hxyBCzo516ipQ8NZaCfsJIPJB0OMfLeuKXYNvRchhM8KHQQsu62IzdXPgpaz2dChLKH+u/H0YaqUKDIyaiTuXaLI2fW6tl2aQqphsNaCYQJ7IsKwKJS+q2SA7r7PBH+3TnBg07Vb81RwjUkas7qlYPxRvHishDJb8bmQ/SpstKNr3Ei32UparzmYecbONyeVPUrtP6/kpoT2YVlcc3RabplXsi3hpUlogvpffYkwYyt39RyUCiXrOYUx18cvBc/uBTW+E1aXROgQK28oWmnoCt5vTEP0v+LmHtemoVQPRR7wcuKXegbdesm9dBKG44Y4Q6tP6ahy1yasupU4lybMN01L/2CO7UmdHJ3DUJYM1k/2rrFFLGcFcyzN55030ZroNohQmLYh1hF16uidYzPQsmHIkuBjw3lxd/XJZHIv4rfHbUJxAFvJ3eVixpaSoGbz6UrFC5BayIUp+n4qKxrSoA31m90eeXbwTMlTxwiVizIZtec2hC1e7M5wMSF9pEVIQ9v61hy6yPl8UqNOFo+M3VNYUz0z9ofKQV0t0ioLWUw== dapope1979@gmail.com
-  
